@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#tabs {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#tabs button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: #0073e6;
+    color: white;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+#tabs button.active {
+    background: #005bb5;
+}
+
+#editor, #output, #tutorial {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+    background: #f9f9f9;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+#editor {
+    display: block;
+}
+
+#tutorial {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.controls button {
+    margin-right: 5px;
+}

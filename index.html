@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FL# Interpreter</title>
+    <link rel="stylesheet" href="flsharp.css">
+</head>
+<body>
+    <div id="tabs">
+        <button onclick="switchTab('editor')" class="active">Code Editor</button>
+        <button onclick="switchTab('output')">Output</button>
+        <button onclick="switchTab('tutorial')">Tutorial</button>
+    </div>
+    
+    <div id="editor" contenteditable="true">
+// Write your FL# code here...
+display.text('Hello World');
+display.Text('Hello' + ' World');
+    </div>
+    <div id="output"></div>
+    
+    <div id="tutorial">
+        <h2>Welcome to the FL# Tutorial</h2>
+        <p>FL# (Flower Language Sharp) is a simple programming language that you are creating.</p>
+        <h3>Basic Commands:</h3>
+        <ul>
+            <li><strong>Display Text:</strong> <code>display.text('Hello World')</code></li>
+            <li><strong>Concatenate Text:</strong> <code>display.Text('Hello' + ' World')</code></li>
+            <li><strong>Display Image from URL:</strong> <code>display.img('https://example.com/photo.jpg')</code></li>
+            <li><strong>Display Local Image:</strong> <code>display.img('photo.jpg')</code> (Image must be in the same directory)</li>
+        </ul>
+    </div>
+    
+    <div class="controls">
+        <button onclick="runFL()">Run FL# Code</button>
+        <button onclick="clearEditorAndOutput()">Clear Code and Output</button>
+        <button onclick="saveCode()">Save Code</button>
+        <a href="index.html" target="_blank"><button>For OneCompiler</button></a>
+    </div>
+
+    <script src="flsharp-commands.js"></script>
+    <script src="flsharp.js"></script>
+</body>
+</html>
